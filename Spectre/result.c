@@ -24,9 +24,10 @@ int main(){
 		result_one = 0;
 		for(z = 0; z < times; z++){
 			for(int i = 1; i < 10; i++) {
-				// threshold is 790, depending on process, geted by analyze.c
+				// 790 represents the start of nop-loop, depending on process
 				if (t[j * times * base + i + base * z] > 790 && t[j * times * base + i + base * z - 1] < 790) {
 					num_one++;
+					// threshold is 790, depending on process, geted by analyze.c
 					if(t[j * times * base + i - 1  + base * z] < 665){
 						result_one++;
 						
