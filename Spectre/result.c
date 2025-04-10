@@ -27,7 +27,7 @@ int main(){
 				// 790 represents the start of nop-loop, depending on process
 				if (t[j * times * base + i + base * z] > 790 && t[j * times * base + i + base * z - 1] < 790) {
 					num_one++;
-					// threshold is 790, depending on process, geted by analyze.c
+					// threshold is 665, depending on process, geted by analyze.c
 					if(t[j * times * base + i - 1  + base * z] < 665){
 						result_one++;
 						
